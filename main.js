@@ -1,3 +1,11 @@
+// display the site after all the content is loaded
+let container = document.getElementById("container");
+container.setAttribute("style", "display: none");
+window.addEventListener("load", () => {
+  let loader = document.getElementById("loader");
+  loader.setAttribute("style", "opacity: 0; pointer-events: none");
+  container.setAttribute("style", "display: block");
+});
 // hide placeholder on focus and show on blur
 let inputs = document.querySelectorAll("input , textarea");
 inputs.forEach((input) => {
