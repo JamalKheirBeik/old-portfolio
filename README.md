@@ -1,7 +1,7 @@
-#About
+# About
 
 This is my personal live portfolio.
 
-##Notice
+## Notice
 
 The Projects On The Website Are Not Live To View Yet.
