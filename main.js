@@ -72,7 +72,7 @@ let projects = [
   {
     name: "Snake Game",
     description: "The Popular Snake Game Created With Javascript",
-    image: "images/reaction_time.png",
+    image: "images/snake_game.png",
     link: "#",
   },
   {
