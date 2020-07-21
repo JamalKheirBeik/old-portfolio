@@ -4,6 +4,9 @@ container.setAttribute("style", "display: none");
 window.addEventListener("load", () => {
   let loader = document.getElementById("loader");
   loader.setAttribute("style", "opacity: 0; pointer-events: none");
+  setTimeout(() => {
+    loader.remove();
+  }, 1000);
   container.setAttribute("style", "display: block");
 });
 // hide placeholder on focus and show on blur
