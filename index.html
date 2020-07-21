@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jamal Kheir Beik Portfolio" />
+    <meta
+      name="keywords"
+      content="Portfolio, HTML, CSS, JavaScript, Projects, Contact"
+    />
+    <meta name="author" content="Jamal Kheir Beik" />
+    <title>Jamal Kheir Beik | Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/48b83cc38d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="nav" id="nav">
+      <ul>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+    <!-- content of the site -->
+    <div class="container">
+      <h1 class="title" id="about">About me</h1>
+      <div class="about">
+        <div class="row">
+          <img src="images/me.jpg" alt="Image of me" />
+          <p>
+            My Name Is Jamal Kheir Beik And Im A frontend Backend Web Developer
+            I Studies Informatic Engineering In Tishreen University And
+            Specialized In The Software Engineering Department
+          </p>
+        </div>
+        <div class="row exp">
+          <h2>I Have Experience With</h2>
+          <ul>
+            <li><i class="fab fa-html5"></i></li>
+            <li><i class="fab fa-css3"></i></li>
+            <li><i class="fab fa-sass"></i></li>
+            <li><i class="fab fa-bootstrap"></i></li>
+            <li><i class="fab fa-php"></i></li>
+            <li><i class="fab fa-js"></i></li>
+            <li><i class="fab fa-node"></i></li>
+            <li><i class="fa fa-database"></i></li>
+            <li><i class="fab fa-vuejs"></i></li>
+            <li><i class="fab fa-laravel"></i></li>
+          </ul>
+        </div>
+      </div>
+      <h1 class="title" id="projects">Projects i worked on</h1>
+      <div id="projects-container" class="projects-container"></div>
+      <h1 class="title" id="contact">Contact me</h1>
+      <div class="contact">
+        <form name="contact" method="POST" data-netlify="true">
+          <div>
+            <input type="text" name="name" placeholder="Enter Your Full Name" />
+          </div>
+          <div>
+            <input type="email" name="email" placeholder="Enter Your Email" />
+          </div>
+          <div>
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter The Subject Of The Email"
+            />
+          </div>
+          <div>
+            <textarea
+              name="message"
+              placeholder="Enter Your Message Here"
+            ></textarea>
+          </div>
+          <button>Send Message</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <ul>
+        <li>
+          <a href="" target="blank"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="" target="blank"><i class="fa fa-github"></i></a>
+        </li>
+        <li>
+          <a href="" target="blank"><i class="fa fa-linkedin"></i></a>
+        </li>
+        <li><i class="fa fa-envelope"></i> jamalkheirbeik@gmail.com</li>
+        <li><i class="fa fa-phone"></i> +963 938106628</li>
+        <li>
+          <button class="scroll-top" id="scrollBtn">
+            <i class="fa fa-angle-double-up"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
