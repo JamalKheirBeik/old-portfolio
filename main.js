@@ -29,20 +29,20 @@ let projects = [
     description:
       "Created Using Javascript The Player Have To Click The Balls As Fast As He Can Before They Disappear And After The Timer Ends The Result Shows",
     image: "images/reaction_time.png",
-    link: "#",
+    link: "https://reactiontimetester.netlify.app/",
   },
   {
     name: "JS Clock",
     description: "Analog Clock Using Javascipt",
     image: "images/JS_Clock.png",
-    link: "#",
+    link: "https://js-analogclock.netlify.app",
   },
   {
     name: "JS Calculator",
     description:
       "Simple Calculator Using Javascipt That Can Solve Non Complex Operatinos",
     image: "images/JS_Calculator.png",
-    link: "#",
+    link: "https://slick-js-calculator.netlify.app",
   },
   {
     name: "Cinema",
@@ -56,7 +56,7 @@ let projects = [
     description:
       "Using MusixMatch API You Can Search For Songs To Get Their Lyrics",
     image: "images/MusixMatch_API_Lyrics_Finder.png",
-    link: "#",
+    link: "https://musixmatch-lyrics-finder.netlify.app/",
   },
   {
     name: "eCommerce",
@@ -76,20 +76,27 @@ let projects = [
     name: "Snake Game",
     description: "The Popular Snake Game Created With Javascript",
     image: "images/snake_game.png",
-    link: "#",
+    link: "https://js-simple-snake-game.netlify.app",
   },
   {
     name: "Apex Legends Stats Tracker",
     description:
       "Using The Apex Legends API We Retrieve The Data Of Specific Player From All Platforms That The Game Is Available On",
     image: "images/apex_legends_tracker.png",
-    link: "#",
+    link: "https://blooming-inlet-19317.herokuapp.com/",
+  },
+  {
+    name: "Github Account Finder",
+    description:
+      "Using The Github API We Retrieve The Data Of Specific Account And Show His Latest Repos And Some Of His Public Stats",
+    image: "images/github_account_finder.png",
+    link: "https://github-accountfinder.netlify.app",
   },
 ];
 // inserting the projects to the document
 let projectsContainer = document.getElementById("projects-container");
 projects.forEach((project) => {
-  projectsContainer.innerHTML += `<div class='project'><img src='${project["image"]}' alt='project image' /><div class='description'><h2>${project["name"]}</h2><p>${project["description"]}</p><a href='${project["link"]}'>Check The Project</a></div></div>`;
+  projectsContainer.innerHTML += `<div class='project'><img src='${project["image"]}' alt='project image' /><div class='description'><h2>${project["name"]}</h2><p>${project["description"]}</p><a href='${project["link"]}' target='_blank'>Check The Project</a></div></div>`;
 });
 // scroll top button
 let scrollBtn = document.getElementById("scrollBtn");
