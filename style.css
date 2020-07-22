@@ -106,6 +106,27 @@ html {
   color: #2c3e50;
   font-size: 20px;
   font-weight: bold;
+  transition: 0.3s ease;
+  position: relative;
+}
+.nav ul li a:hover::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  background-color: #34495e;
+  transform-origin: left;
+  animation: bar 0.3s ease;
+}
+@keyframes bar {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 .nav ul li a:hover {
   color: #16a085;

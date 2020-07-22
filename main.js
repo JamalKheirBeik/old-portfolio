@@ -96,7 +96,7 @@ let projects = [
 // inserting the projects to the document
 let projectsContainer = document.getElementById("projects-container");
 projects.forEach((project) => {
-  projectsContainer.innerHTML += `<div class='project'><img src='${project["image"]}' alt='project image' /><div class='description'><h2>${project["name"]}</h2><p>${project["description"]}</p><a href='${project["link"]}' target='_blank'>Check The Project</a></div></div>`;
+  projectsContainer.innerHTML += `<div class='project' data-aos="fade-up"><img src='${project["image"]}' alt='project image' /><div class='description'><h2>${project["name"]}</h2><p>${project["description"]}</p><a href='${project["link"]}' target='_blank'>Check The Project</a></div></div>`;
 });
 // scroll top button
 let scrollBtn = document.getElementById("scrollBtn");
